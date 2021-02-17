@@ -13,10 +13,6 @@ public class ApiApplication {
 
 		SpringApplication.run(ApiApplication.class, args);
 
-		GoogleSheet gs = new GoogleSheet();
-		Object o = gs.getSheetValuesFromRange("1UyEK38Llr17ph_qrnuN2CUaKZitpXoKoR59uJqVqgIc", "Pick Owner!B3:B3")
-				.get(0).get(0);
-		System.out.println(o);
 	}
 
 }
