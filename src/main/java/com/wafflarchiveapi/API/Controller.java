@@ -15,4 +15,14 @@ public class Controller {
         return new DraftClass(Integer.parseInt(year));
     }
 
+    @GetMapping("index/statSheet")
+    public StatSheet statSheet() throws IOException, GeneralSecurityException {
+        return new StatSheet();
+    }
+
+    @GetMapping("index/playerRecords")
+    public PlayerRecordBook playerRecordBook() throws IOException, GeneralSecurityException {
+        return new PlayerRecordBook();
+    }
+
 }

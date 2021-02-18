@@ -20,11 +20,11 @@ public enum TeamInfo {
     WHALE_SHARKS ("Whale Sharks", "Walnut Creek", "https://i.imgur.com/tW0aTiP.png", "#62c4e9", "#f10909"),
     ;
 
-    private final String clubName;
-    private final String currentLocation;
-    private final String logoURL;
-    private final String primaryColor;
-    private final String secondaryColor;
+    public final String clubName;
+    public final String currentLocation;
+    public final String logoURL;
+    public final String primaryColor;
+    public final String secondaryColor;
 
     TeamInfo(String clubName, String currentLocation, String logoURL, String primaryColor,
              String secondaryColor) {
