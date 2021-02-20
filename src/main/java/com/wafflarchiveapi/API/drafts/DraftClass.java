@@ -1,4 +1,7 @@
-package com.wafflarchiveapi.API;
+package com.wafflarchiveapi.API.drafts;
+
+import com.wafflarchiveapi.API.googlesheetsapi.GoogleSheet;
+import com.wafflarchiveapi.API.Round;
 
 import java.io.IOException;
 import java.security.GeneralSecurityException;

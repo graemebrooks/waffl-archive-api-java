@@ -1,4 +1,6 @@
-package com.wafflarchiveapi.API;
+package com.wafflarchiveapi.API.drafts;
+
+import com.wafflarchiveapi.API.Round;
 
 import java.util.ArrayList;
 import java.util.List;

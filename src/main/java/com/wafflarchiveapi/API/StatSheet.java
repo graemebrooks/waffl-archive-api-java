@@ -1,5 +1,7 @@
 package com.wafflarchiveapi.API;
 
+import com.wafflarchiveapi.API.googlesheetsapi.GoogleSheet;
+
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 import java.util.ArrayList;
