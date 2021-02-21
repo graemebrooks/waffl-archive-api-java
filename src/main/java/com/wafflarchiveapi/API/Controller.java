@@ -1,8 +1,8 @@
 package com.wafflarchiveapi.API;
 
 import com.wafflarchiveapi.API.drafts.DraftClass;
-import com.wafflarchiveapi.API.records.PlayerRecordBook;
 import com.wafflarchiveapi.API.records.dto.TeamRecord;
+import com.wafflarchiveapi.API.records.services.PlayerRecordBookService;
 import com.wafflarchiveapi.API.records.services.TeamRecordBookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,6 +19,9 @@ public class Controller {
     @Autowired
     TeamRecordBookService teamRecordBookService;
 
+    @Autowired
+    PlayerRecordBookService playerRecordBookService;
+
     @GetMapping("index/draftData")
     public DraftClass draftClass(@RequestParam(value = "year") String year) throws IOException, GeneralSecurityException {
         return new DraftClass(Integer.parseInt(year));
@@ -30,8 +33,8 @@ public class Controller {
     }
 
     @GetMapping("index/playerRecordBook")
-    public PlayerRecordBook playerRecordBook() throws IOException, GeneralSecurityException {
-        return new PlayerRecordBook();
+    public HashMap<String, PlayerRecordBookService.PlayerRecord[]> playerRecordBook() throws IOException, GeneralSecurityException {
+        return playerRecordBookService.build();
     }
 
     @GetMapping("index/teamRecordBook")
