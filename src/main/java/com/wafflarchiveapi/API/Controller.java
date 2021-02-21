@@ -3,7 +3,6 @@ package com.wafflarchiveapi.API;
 import com.wafflarchiveapi.API.drafts.DraftClass;
 import com.wafflarchiveapi.API.records.PlayerRecordBook;
 import com.wafflarchiveapi.API.records.dto.TeamRecord;
-import com.wafflarchiveapi.API.records.teamrecords.TeamRecordBook;
 import com.wafflarchiveapi.API.records.services.TeamRecordBookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

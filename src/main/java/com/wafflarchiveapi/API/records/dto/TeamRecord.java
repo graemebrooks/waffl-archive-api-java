@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class TeamRecord {
 
-    private PointsByPosition pointsByPosition;
+    private PointsByPosition pointsByPosition = new PointsByPosition();
     private ArrayList<Season> seasons;
 
     public PointsByPosition getPointsByPosition() {
